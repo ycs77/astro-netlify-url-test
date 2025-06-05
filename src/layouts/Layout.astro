@@ -45,6 +45,11 @@ const {
     {meta.seo_head && <Fragment set:html={meta.seo_head} />}
   </head>
   <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+    </nav>
+
     <slot />
 
     {meta.seo_body && <Fragment set:html={meta.seo_body} />}

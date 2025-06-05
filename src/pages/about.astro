@@ -1,0 +1,19 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { seoMeta } from '@stephenchenorg/astro/page'
+import { createCompanySetting } from '@stephenchenorg/astro/company-setting'
+
+const companySetting = createCompanySetting({
+  name: 'Astro',
+  description: 'Astro is a modern web development platform.',
+  logo: 'https//example.com/logo.png',
+})
+
+const meta = seoMeta({
+  title: 'Astro',
+})
+---
+
+<Layout meta={meta} companySetting={companySetting}>
+  <h1>About</h1>
+</Layout>
