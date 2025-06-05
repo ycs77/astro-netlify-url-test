@@ -3,7 +3,7 @@ import netlify from '@astrojs/netlify'
 
 export default defineConfig({
   site: 'http://localhost:4321',
-  output: 'server',
+  output: 'static',
   trailingSlash: 'never',
   build: {
     format: 'file',
